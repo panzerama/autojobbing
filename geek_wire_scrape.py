@@ -49,7 +49,7 @@ for address in address_file:
         if company_page.status_code == 200:
             print("Success for " + address)
     except Exception as e:
-        print("Oops, that didn't work for " + address)
+        print("Oops, couldn't get content for " + address)
         print(e)
         continue
 
